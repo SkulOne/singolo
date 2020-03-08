@@ -155,7 +155,7 @@ footer{
 footer p{
     font-size: 12px;
     line-height: 22px;
-    color: #f0d8d9;
+    color: #666d89;
     font-family: "Lato";
     font-weight: 400;
     margin: 0px 0 0 40px;
@@ -164,4 +164,10 @@ footer p{
 
 .social-icon{
     margin-left: 6px;
+}
+
+.social-icon:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    background: radial-gradient(circle closest-side, #53596d, #0081b500);
 }
