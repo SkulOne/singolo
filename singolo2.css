@@ -15,7 +15,6 @@ body {
     font-size: 31px;
     line-height: 0.9;
     color: #666d89;
-    /*font-weight: 900;*/
     padding: 64px 0 0 40px;
     font-family: Lato, sans-serif;
     margin: 0;
@@ -23,29 +22,25 @@ body {
 
 .subtitle {
     font-size: 18px;
-    /* font-weight: 300; */
     color: #767e9e;
     line-height: 30px;
     margin: 22px 0 0 40px;
     font-family: Lato, sans-serif;
-    /*font-weight: 300;*/
     letter-spacing: -0.23px;
     width: 950px;
 }
 
-button {
+.tags{
     border-radius: 5px;
     border: solid 1px #666d89;
     background: none;
     font-size: 12px;
     margin-right: 6px;
     padding: 2px 6px;
-    /* padding: 0; */
     color: #dedede;
     font-family: Lato, sans-serif;
     line-height: 1.4;
     text-align: justify;
-    /* box-sizing: border-box; */
 }
 
 .sort-buttons {
@@ -68,7 +63,7 @@ button {
 
 .cards {
     width: 950px;
-    padding-top: 45px;
+    padding-top: 44px;
     margin: 0 40px 0 40px;
 }
 
@@ -95,14 +90,14 @@ button {
     line-height: 1.75;
 }
 
-ul {
+.card-social-icons {
     padding: 0;
-    margin: 24px 0px 0 0px;
+    margin: 24px 0 0 0;
 }
 
-li {
+.card-social-icons li {
     display: inline;
-    margin-right: 2px;
+    margin-right: 1px;
 }
 
 .about-us {
@@ -112,7 +107,7 @@ li {
 }
 
 .card-margin {
-    margin: 0px 21px 0 17px;
+    margin: 0 21px 0 17px;
 }
 
 span :nth-child(1){

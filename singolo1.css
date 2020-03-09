@@ -44,7 +44,7 @@ nav a {
     color: inherit;
 }
 
-nav a:focus {
+nav a:hover{
     color: #f06c64;
 }
 
@@ -80,7 +80,7 @@ nav a:focus {
     margin-top: 9px;
 }
 
-h1 {
+.our-service-title {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -89,7 +89,7 @@ h1 {
     letter-spacing: 1px;
 }
 
-p {
+.our-service-subtitle {
     width: 940px;
     height: 57px;
     font-size: 18px;
@@ -112,7 +112,7 @@ p {
     width: 1020px;
 }
 
-ul li {
+.service {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;

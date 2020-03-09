@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 
-section {
+.get-a-quote {
     width: 1020px;
     height: 648px;
     background-color: #f06c64;
@@ -103,7 +103,7 @@ input[type="submit" i] {
     width: 325px;
 }
 
-li {
+.contacts-list li {
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -114,12 +114,12 @@ li {
     font-weight: 400;
 }
 
-li a{
+.contact-link{
     color: #f0d8d9;
     text-decoration: none;
 }
 
-li .contact-icons{
+.contact-icons{
     margin-right: 10px;
 }
 
@@ -128,7 +128,7 @@ li .contact-icons{
     margin: 24px 0 0 0;
 }
 
-li div{
+.icon-container{
     width: 23px;
     height: 13px;
     display: flex;
