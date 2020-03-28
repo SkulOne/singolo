@@ -9,21 +9,31 @@
 <header>
     <a class="logotype">SINGOLO<span>*</span></a>
     <nav>
-        <a href="singolo1.html">HOME</a>
-        <a href="">SERVICES</a>
-        <a href="">PORTFOLIO</a>
-        <a href="">ABOUT</a>
-        <a href="">CONTACT</a>
+        <a class="anchor" href="#home">HOME</a>
+        <a class="anchor" href="#services">SERVICES</a>
+        <a class="anchor" href="#portfolio">PORTFOLIO</a>
+        <a class="anchor" href="#about">ABOUT</a>
+        <a class="anchor" href="#contact">CONTACT</a>
     </nav>
 </header>
 <main>
-    <section class="slider">
-        <img src="assets/chev%20left.png" alt="Arrow left" height="27" class="arrow">
-        <img src="assets/V.png" alt="Phone" class="phone-vertical">
-        <img src="assets/H.png" alt="Phone" class="phone-horizontal">
-        <img src="assets/chev%20right.png" alt="Arrow right" height="27" class="arrow">
+    <section class="slider-section" id="home">
+        <img src="assets/chev%20left.png" alt="Arrow left" height="27" class="arrow" onclick="plusSlide(-1)">
+        <div class="slide-container">
+            <div class="slide fade">
+                <img src="assets/Background.svg" class="black-vertical">
+                <img src="assets/V.png" alt="Phone" class="phone-vertical">
+                <img src="assets/Background.svg" class="black-horizontal">
+                <img src="assets/H.png" alt="Phone" class="phone-horizontal">
+            </div>
+            <div class="slide fade">
+                <img src="assets/Background (14).png" height="513" width="516"/>
+            </div>
+
+        </div>
+        <img src="assets/chev%20right.png" alt="Arrow right" height="27" class="arrow" onclick="plusSlide(1)">
     </section>
-    <section class="our-service-container">
+    <section class="our-service-container" id="services">
         <h1 class="our-service-title">Our Services</h1>
         <p class="our-service-subtitle">
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
@@ -89,36 +99,38 @@
         </ul>
 
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h1 class="portfolio-title">Portfolio</h1>
-        <p class="portfolio-subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+        <p class="portfolio-subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
+            sem nec
             elit.</p>
         <div class="sort-buttons">
-            <button class="tags">All</button>
-            <button class="tags">Web Design</button>
-            <button class="tags">Graphic Design</button>
-            <button class="tags">Artwork</button>
+            <button class="tags" onclick="sortImg()">All</button>
+            <button class="tags" onclick="sortImg()">Web Design</button>
+            <button class="tags" onclick="sortImg()">Graphic Design</button>
+            <button class="tags" onclick="sortImg()">Artwork</button>
         </div>
         <div class="image-container">
-            <img src="assets/portfolio/1.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/2.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/3.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/4.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/5.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/6.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/7.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/8.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/9.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/10.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/11.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
-            <img src="assets/portfolio/12.png" height="187" width="220" class="portfolio-images" alt="portfolio-image"/>
+            <img src="assets/portfolio/1.png" height="187" width="220" class="portfolio-images" alt="web"/>
+            <img src="assets/portfolio/2.png" height="187" width="220" class="portfolio-images" alt="web"/>
+            <img src="assets/portfolio/3.png" height="187" width="220" class="portfolio-images" alt="web"/>
+            <img src="assets/portfolio/4.png" height="187" width="220" class="portfolio-images" alt="web"/>
+            <img src="assets/portfolio/5.png" height="187" width="220" class="portfolio-images" alt="design"/>
+            <img src="assets/portfolio/6.png" height="187" width="220" class="portfolio-images" alt="design"/>
+            <img src="assets/portfolio/7.png" height="187" width="220" class="portfolio-images" alt="design"/>
+            <img src="assets/portfolio/8.png" height="187" width="220" class="portfolio-images" alt="design"/>
+            <img src="assets/portfolio/9.png" height="187" width="220" class="portfolio-images" alt="art"/>
+            <img src="assets/portfolio/10.png" height="187" width="220" class="portfolio-images" alt="art"/>
+            <img src="assets/portfolio/11.png" height="187" width="220" class="portfolio-images" alt="art"/>
+            <img src="assets/portfolio/12.png" height="187" width="220" class="portfolio-images" alt="art"/>
         </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about">
         <h1 class="about-us-title">
             About Us
         </h1>
-        <p class="portfolio-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo
+        <p class="portfolio-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
+            non commodo
             luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
             tortor mauris condimentum nibh.</p>
         <div class="cards">
@@ -164,7 +176,7 @@
             </div>
         </div>
     </section>
-    <section class="get-a-quote">
+    <section class="get-a-quote" id="contact">
         <h1 class="get-a-quote-title">Get a Quote</h1>
         <p class="subtitle">
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
@@ -173,12 +185,13 @@
             tortor mauris condimentum nibh.
         </p>
         <div class="content">
-            <form action="">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Subject"><br>
-                <textarea name="" id="" cols="30" rows="12" placeholder="Describe your project in detail..."></textarea><br>
-                <input type="submit">
+            <form action="" name="quote">
+                <input name="username" type="text" placeholder="Name" required>
+                <input name="usermail" type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject" name="subject"><br>
+                <textarea name="description" id="" cols="30" rows="12"
+                          placeholder="Describe your project in detail..."></textarea><br>
+                <input type="submit" onclick="showModal()">
             </form>
             <div class="contact-information-container">
                 <h3 class="contact-title">Contact Information</h3>
@@ -209,6 +222,12 @@
                 </div>
             </div>
         </div>
+        <div class="modal">
+            <h3>The letter was sent </h3>
+            <p class="modal-line"></p>
+            <p class="modal-line"></p>
+            <button class="accept" onclick="closeModal()">OK!</button>
+        </div>
     </section>
 </main>
 <footer>
@@ -220,5 +239,6 @@
         <img src="assets/social-icons/LinkedIn.png" alt="linkedin icon" class="social-icon">
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
