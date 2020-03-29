@@ -27,7 +27,7 @@ header {
     color: #f06c64;
 }
 
-nav {
+.navigation {
     font-size: 12px;
     color: #ffffff;
     font-family: "Lato", serif;
@@ -36,7 +36,7 @@ nav {
     text-align: left;
 }
 
-nav a {
+.navigation a {
     margin-left: 27px;
     pointer: cursor;
     text-decoration: none;
@@ -47,7 +47,7 @@ nav a {
 /*    color: #f06c64;*/
 /*}*/
 
-nav a:active {
+.navigation a:active {
     color: #f06c64;
 }
 
@@ -785,6 +785,10 @@ footer p {
     .social-container{
         margin: 0;
     }
+
+    .navigation {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 375px) and (min-width: 320px) {
@@ -916,27 +920,53 @@ footer p {
         margin: 0 20px 5px;
     }
 
-    .contact-subtitle{
+    .contact-subtitle {
         margin: 0 20px 5px;
     }
 
-    .contacts-container{
+    .contacts-container {
         margin: 0 20px 42px;
     }
 
-    .contacts-list{
+    .contacts-list {
         margin-top: 0;
     }
 
-    footer{
+    footer {
         justify-content: center;
 
     }
+
     footer p {
         display: none;
     }
 
-    .social-container{
+    .social-container {
         margin: 0;
     }
+
+    .navigation {
+        display: none;
+    }
+
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 278px;
+        height: 100vh;
+        background: #2d303a;
+    }
+    .mobile-menu {
+        display: none;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }

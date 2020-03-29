@@ -55,7 +55,7 @@ function onOff() {
             showedV = false;
         } else {
             let cord = verticalPhone.getBoundingClientRect();
-            black.style.left = 13+cord.left+"px";
+            black.style.left = 13 + cord.left + "px";
             black.style.top = "210px";
             black.style.display = "block";
             showedV = true;
@@ -68,7 +68,7 @@ function onOff() {
             showedH = false;
         } else {
             let cord = horizontalPhone.getBoundingClientRect();
-            black.style.left = 132+cord.left+"px";
+            black.style.left = 132 + cord.left + "px";
             black.style.display = "block";
             showedH = true;
         }
@@ -132,4 +132,34 @@ function shuffle(array) {
     }
     return array;
 }
+
+window.addEventListener(`resize`, event => {
+    showMenuIcon();
+}, false);
+
+showMenuIcon();
+
+let menuIcon = document.querySelector("header img");
+function showMenuIcon() {
+    if (document.body.clientWidth <= 375) {
+        let img = document.createElement('img');
+        img.src = "assets/Burger-menu-icon.svg";
+        img.style = "width: 20px; height: 20px; position: absolute; left: 20px; cursor: pointer; z-index:10"
+        let header = document.querySelector('header');
+        header.prepend(img);
+    }
+    if(document.body.clientWidth > 375) {
+        let img = document.querySelector("header img");
+        img.remove();
+    }
+}
+
+menuIcon.addEventListener('click',  function () {
+    let nav = document.querySelector('.navigation');
+    nav.style.display = "flex";
+    nav.style.position= "absolute";
+    nav.style.flexDirection = "column";
+    nav.style.height = "100vh";
+    nav.style.backgroundColor = "#2d303a";
+})
 
