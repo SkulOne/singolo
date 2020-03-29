@@ -54,6 +54,9 @@ function onOff() {
             black.style.display = "none";
             showedV = false;
         } else {
+            let cord = verticalPhone.getBoundingClientRect();
+            black.style.left = 13+cord.left+"px";
+            black.style.top = "210px";
             black.style.display = "block";
             showedV = true;
         }
@@ -64,6 +67,8 @@ function onOff() {
             black.style.display = "none";
             showedH = false;
         } else {
+            let cord = horizontalPhone.getBoundingClientRect();
+            black.style.left = 132+cord.left+"px";
             black.style.display = "block";
             showedH = true;
         }
@@ -118,20 +123,13 @@ function sortImg() {
 
 function shuffle(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
-
-    // While there remain elements to shuffle...
     while (0 !== currentIndex) {
-
-        // Pick a remaining element...
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
-
-        // And swap it with the current element.
         temporaryValue = array[currentIndex];
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
     }
-
     return array;
 }
 

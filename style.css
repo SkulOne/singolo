@@ -195,8 +195,6 @@ nav a:active {
 .black-vertical {
     display: none;
     position: absolute;
-    top: 211px;
-    left: 132px;
 }
 
 .black-horizontal {
@@ -333,7 +331,6 @@ nav a:active {
     max-width: 301px;
     letter-spacing: -0.05px;
     line-height: 1.75;
-    white-space: nowrap;
 }
 
 .card-social-icons {
@@ -374,7 +371,6 @@ span :nth-child(1) {
 }
 
 .get-a-quote {
-    height: 648px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
 }
@@ -576,7 +572,7 @@ footer p {
     margin: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1020px) {
+@media screen and (min-width: 768px) and (max-width: 1019px) {
     .phone-vertical {
         height: 363px;
         width: 180px;
@@ -627,16 +623,320 @@ footer p {
         margin: 25px 0 0 20px;
     }
 
-    .portfolio-images{
+    .portfolio-images {
         width: 216px;
         height: 183px;
     }
 
-    .image-container{
+    .image-container {
         width: 710px;
     }
 }
 
-/*@media screen and (min-width: 375px) and (max-width: 767px)*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .phone-vertical {
+        height: 168px;
+        width: 80px;
+        margin-right: 20px;
+        margin-left: 6px;
+    }
 
+    .phone-horizontal {
+        height: 88px;
+        width: 177px;
+        margin-right: 8px;
+    }
 
+    .arrow {
+        margin: 0 5px;
+        width: 14px;
+    }
+
+    .our-service-title {
+        margin: 25px 111px 0 0;
+    }
+
+    .our-service-subtitle {
+        margin-left: 32px;
+    }
+
+    .service {
+        width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .service-list {
+        margin-bottom: 0;
+    }
+
+    .portfolio-images {
+        width: 151px;
+        height: 128px;
+        margin: 6px;
+    }
+
+    .portfolio-title {
+        padding-top: 40px;
+        margin-left: 23px;
+    }
+
+    .about-us-s .portfolio-title, .portfolio-subtitle, .sort-buttons {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .image-container {
+        margin: 9px 14px 42px;
+    }
+
+    .about-us-title {
+        padding-left: 20px;
+    }
+
+    .employee-photo {
+        width: 314px;
+        height: 314px;
+    }
+
+    .cards {
+        flex-direction: column;
+        margin: 0 22px 10px 22px;
+        align-items: center;
+
+    }
+
+    .info {
+        margin-bottom: 0;
+    }
+
+    .card-social-icons {
+        margin-top: 9px;
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin-bottom: 34px;
+    }
+
+    .card-margin {
+        margin: 0 0 34px 0;
+    }
+
+    .get-a-quote-title {
+        padding-top: 41px;
+        margin: 0 20px 14px 20px;
+    }
+
+    .quote-content .subtitle {
+        width: 314px;
+        height: 214px;
+        margin: 0 20px 0 20px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    form input, form textarea {
+        margin-left: 20px;
+        width: 293px;
+        margin-bottom: 12px;
+    }
+
+    form {
+        width: 320px;
+        margin: 19px 0 0 0;
+    }
+
+    input[type="submit" i] {
+        width: 315px;
+    }
+
+    .contact-information-container {
+        margin-top: 20px;
+    }
+
+    .contact-title {
+        margin: 0 20px 5px;
+    }
+
+    .contact-subtitle{
+        margin: 0 20px 5px;
+    }
+
+    .contacts-container{
+        margin: 0 20px 42px;
+    }
+
+    .contacts-list{
+        margin-top: 0;
+    }
+
+    footer{
+        justify-content: center;
+
+    }
+    footer p {
+        display: none;
+    }
+
+    .social-container{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 375px) and (min-width: 320px) {
+    .phone-vertical {
+        height: 168px;
+        width: 80px;
+        margin-right: 20px;
+        margin-left: 6px;
+    }
+
+    .phone-horizontal {
+        height: 88px;
+        width: 177px;
+        margin-right: 8px;
+    }
+
+    .arrow {
+        margin: 0 5px;
+        width: 14px;
+    }
+
+    .our-service-title {
+        margin: 25px 111px 0 0;
+    }
+
+    .our-service-subtitle {
+        margin-left: 32px;
+    }
+
+    .service {
+        width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .service-list {
+        margin-bottom: 0;
+    }
+
+    .portfolio-images {
+        width: 151px;
+        height: 128px;
+        margin: 6px;
+    }
+
+    .portfolio-title {
+        padding-top: 40px;
+        margin-left: 23px;
+    }
+
+    .about-us-s .portfolio-title, .portfolio-subtitle, .sort-buttons {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .image-container {
+        margin: 9px 14px 42px;
+    }
+
+    .about-us-title {
+        padding-left: 20px;
+    }
+
+    .employee-photo {
+        width: 314px;
+        height: 314px;
+    }
+
+    .cards {
+        flex-direction: column;
+        margin: 0 22px 10px 22px;
+        align-items: center;
+
+    }
+
+    .info {
+        margin-bottom: 0;
+    }
+
+    .card-social-icons {
+        margin-top: 9px;
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin-bottom: 34px;
+    }
+
+    .card-margin {
+        margin: 0 0 34px 0;
+    }
+
+    .get-a-quote-title {
+        padding-top: 41px;
+        margin: 0 20px 14px 20px;
+    }
+
+    .quote-content .subtitle {
+        width: 314px;
+        height: 214px;
+        margin: 0 20px 0 20px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    form input, form textarea {
+        margin-left: 20px;
+        width: 293px;
+        margin-bottom: 12px;
+    }
+
+    form {
+        width: 320px;
+        margin: 19px 0 0 0;
+    }
+
+    input[type="submit" i] {
+        width: 315px;
+    }
+
+    .contact-information-container {
+        margin-top: 20px;
+    }
+
+    .contact-title {
+        margin: 0 20px 5px;
+    }
+
+    .contact-subtitle{
+        margin: 0 20px 5px;
+    }
+
+    .contacts-container{
+        margin: 0 20px 42px;
+    }
+
+    .contacts-list{
+        margin-top: 0;
+    }
+
+    footer{
+        justify-content: center;
+
+    }
+    footer p {
+        display: none;
+    }
+
+    .social-container{
+        margin: 0;
+    }
+}
