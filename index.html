@@ -45,7 +45,7 @@
             </p>
             <ul class="service-list">
                 <li class="service">
-                    <img src="assets/icons/pen.svg" alt="Pen icon">
+                    <img src="assets/icons/pen.svg" alt="Pen icon" class="service-image">
                     <div class="service-info">
                         <h5 class="service-title">Custom Design</h5>
                         <p class="service-subtitle">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
@@ -54,7 +54,7 @@
                     </div>
                 </li>
                 <li class="service">
-                    <img src="assets/icons/bulb.svg" alt="Bulb icon">
+                    <img src="assets/icons/bulb.svg" alt="Bulb icon" class="service-image">
                     <div class="service-info">
                         <h5 class="service-title">Inovative Ideas</h5>
                         <p class="service-subtitle">Quisque luctus, quam eget molestie commodo, lacusa purus cursus
@@ -64,7 +64,7 @@
                     </div>
                 </li>
                 <li class="service">
-                    <img src="assets/icons/heart.svg" alt="Heart icon">
+                    <img src="assets/icons/heart.svg" alt="Heart icon" class="service-image">
                     <div class="service-info">
                         <h5 class="service-title">Love Is The Answer</h5>
                         <p class="service-subtitle">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
@@ -107,133 +107,144 @@
         </div>
     </section>
     <section class="portfolio" id="portfolio">
-        <h1 class="portfolio-title">Portfolio</h1>
-        <p class="portfolio-subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
-            sem nec
-            elit.</p>
-        <div class="sort-buttons">
-            <button class="tags" onclick="sortImg()">All</button>
-            <button class="tags" onclick="sortImg()">Web Design</button>
-            <button class="tags" onclick="sortImg()">Graphic Design</button>
-            <button class="tags" onclick="sortImg()">Artwork</button>
-        </div>
-        <div class="image-container">
-            <img src="assets/portfolio/1.png" height="187" width="220" class="portfolio-images" alt="web"/>
-            <img src="assets/portfolio/2.png" height="187" width="220" class="portfolio-images" alt="web"/>
-            <img src="assets/portfolio/3.png" height="187" width="220" class="portfolio-images" alt="web"/>
-            <img src="assets/portfolio/4.png" height="187" width="220" class="portfolio-images" alt="web"/>
-            <img src="assets/portfolio/5.png" height="187" width="220" class="portfolio-images" alt="design"/>
-            <img src="assets/portfolio/6.png" height="187" width="220" class="portfolio-images" alt="design"/>
-            <img src="assets/portfolio/7.png" height="187" width="220" class="portfolio-images" alt="design"/>
-            <img src="assets/portfolio/8.png" height="187" width="220" class="portfolio-images" alt="design"/>
-            <img src="assets/portfolio/9.png" height="187" width="220" class="portfolio-images" alt="art"/>
-            <img src="assets/portfolio/10.png" height="187" width="220" class="portfolio-images" alt="art"/>
-            <img src="assets/portfolio/11.png" height="187" width="220" class="portfolio-images" alt="art"/>
-            <img src="assets/portfolio/12.png" height="187" width="220" class="portfolio-images" alt="art"/>
+        <div class="portfolio-content">
+            <h1 class="portfolio-title">Portfolio</h1>
+            <p class="portfolio-subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                odio
+                sem nec
+                elit.</p>
+            <div class="sort-buttons">
+                <button class="tags" onclick="sortImg()">All</button>
+                <button class="tags" onclick="sortImg()">Web Design</button>
+                <button class="tags" onclick="sortImg()">Graphic Design</button>
+                <button class="tags" onclick="sortImg()">Artwork</button>
+            </div>
+            <div class="image-container">
+                <img src="assets/portfolio/1.png" class="portfolio-images" alt="web"/>
+                <img src="assets/portfolio/2.png" class="portfolio-images" alt="web"/>
+                <img src="assets/portfolio/3.png" class="portfolio-images" alt="web"/>
+                <img src="assets/portfolio/4.png" class="portfolio-images" alt="web"/>
+                <img src="assets/portfolio/5.png" class="portfolio-images" alt="design"/>
+                <img src="assets/portfolio/6.png" class="portfolio-images" alt="design"/>
+                <img src="assets/portfolio/7.png" class="portfolio-images" alt="design"/>
+                <img src="assets/portfolio/8.png" class="portfolio-images" alt="design"/>
+                <img src="assets/portfolio/9.png" class="portfolio-images" alt="art"/>
+                <img src="assets/portfolio/10.png" class="portfolio-images" alt="art"/>
+                <img src="assets/portfolio/11.png" class="portfolio-images" alt="art"/>
+                <img src="assets/portfolio/12.png" class="portfolio-images" alt="art"/>
+            </div>
+
         </div>
     </section>
     <section class="about-us" id="about">
-        <h1 class="about-us-title">
-            About Us
-        </h1>
-        <p class="portfolio-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
-            non commodo
-            luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-            tortor mauris condimentum nibh.</p>
-        <div class="cards">
-            <div class="card">
-                <img src="assets/employee-avatar/Adam%20Jensen.png" height="300" width="300" alt="Adam Jensen Photo"
-                     class="employee-photo"/>
-                <h3 class="name">Adam Jensen</h3>
-                <p class="info">Quisque luctus, quam eget molestie commodo,
-                    lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-                <ul class="card-social-icons">
-                    <li><img src="assets/social-icons/Facebook.png" alt="facebook icon"></li>
-                    <li><img src="assets/social-icons/Google.png" alt="google+ icon"></li>
-                    <li><img src="assets/social-icons/Twitter.png" alt="twitter icon"></li>
-                    <li><img src="assets/social-icons/LinkedIn.png" alt="linkedin icon"></li>
-                </ul>
-            </div>
-            <div class="card card-margin">
-                <img src="assets/employee-avatar/Desmond%20Miles.png" height="300" width="301" alt="Desmond Miles photo"
-                     class="employee-photo">
-                <p class="name">Desmond Miles</p>
-                <p class="info">Curabitur vestibulum eget mauris quis laoreet.
-                    Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                <ul class="card-social-icons">
-                    <li><img src="assets/social-icons/Facebook.png" alt="facebook icon"></li>
-                    <li><img src="assets/social-icons/Google.png" alt="google+ icon"></li>
-                    <li><img src="assets/social-icons/Twitter.png" alt="twitter icon"></li>
-                    <li><img src="assets/social-icons/LinkedIn.png" alt="linkedin icon"></li>
-                </ul>
-            </div>
-            <div class="card">
-                <img src="assets/employee-avatar/Scolara%20Visari.png" height="300" width="300"
-                     alt="Scolara Visari photo"
-                     class="employee-photo">
-                <p class="name">Scolara Visari</p>
-                <p class="info">Nulla sed nunc et tortor luctus faucibus. Morbi
-                    at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                <ul class="card-social-icons">
-                    <li><img src="assets/social-icons/Facebook.png" alt="facebook icon"></li>
-                    <li><img src="assets/social-icons/Google.png" alt="google+ icon"></li>
-                    <li><img src="assets/social-icons/Twitter.png" alt="twitter icon"></li>
-                    <li><img src="assets/social-icons/LinkedIn.png" alt="linkedin icon"></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="get-a-quote" id="contact">
-        <h1 class="get-a-quote-title">Get a Quote</h1>
-        <p class="subtitle">
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-            Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
-            lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-            tortor mauris condimentum nibh.
-        </p>
-        <div class="content">
-            <form action="" name="quote">
-                <input name="username" type="text" placeholder="Name" required>
-                <input name="usermail" type="email" placeholder="Email" required>
-                <input type="text" placeholder="Subject" name="subject"><br>
-                <textarea name="description" id="" cols="30" rows="12"
-                          placeholder="Describe your project in detail..."></textarea><br>
-                <input type="submit" onclick="showModal()">
-            </form>
-            <div class="contact-information-container">
-                <h3 class="contact-title">Contact Information</h3>
-                <p class="contact-subtitle">
-                    Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<br>ra nibh.
-                    Fusce vitae aliquam tellus. Proin sit amet volutpat libero.
-                    Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-                    turpis, et consequat felis.
-                </p>
-                <div class="contacts-container">
-                    <ul class="contacts-list">
-                        <li>
-                            <div class="icon-container"><img src="assets/location.png" alt="location"
-                                                             class="contact-icons" height="11" width="7"></div>
-                            Elm St. 14/05 Lost City
-                        </li>
-                        <li>
-                            <div class="icon-container"><img src="assets/phone.png" alt="phone" class="contact-icons"
-                                                             height="11" width="11"></div>
-                            <a class="contact-link" href="tel:03528 331 86 35">03528 331 86 35</a>
-                        </li>
-                        <li>
-                            <div class="icon-container"><img src="assets/mail.png" alt="mail" class="contact-icons"
-                                                             height="8" width="13"></div>
-                            <a class="contact-link" href="mailto:info@singolo.com">info@singolo.com</a>
-                        </li>
+        <div class="about-content">
+            <h1 class="about-us-title">
+                About Us
+            </h1>
+            <p class="portfolio-subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                mollis,
+                non commodo
+                luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+                commodo,
+                tortor mauris condimentum nibh.</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/employee-avatar/Adam%20Jensen.png" alt="Adam Jensen Photo"
+                         class="employee-photo"/>
+                    <h3 class="name">Adam Jensen</h3>
+                    <p class="info">Quisque luctus, quam eget molestie commodo,
+                        lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                    <ul class="card-social-icons">
+                        <li><img src="assets/social-icons/Facebook.png" alt="facebook icon"></li>
+                        <li><img src="assets/social-icons/Google.png" alt="google+ icon"></li>
+                        <li><img src="assets/social-icons/Twitter.png" alt="twitter icon"></li>
+                        <li><img src="assets/social-icons/LinkedIn.png" alt="linkedin icon"></li>
+                    </ul>
+                </div>
+                <div class="card card-margin">
+                    <img src="assets/employee-avatar/Desmond%20Miles.png" alt="Desmond Miles photo"
+                         class="employee-photo">
+                    <p class="name">Desmond Miles</p>
+                    <p class="info">Curabitur vestibulum eget mauris quis laoreet.
+                        Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    <ul class="card-social-icons">
+                        <li><img src="assets/social-icons/Facebook.png" alt="facebook icon"></li>
+                        <li><img src="assets/social-icons/Google.png" alt="google+ icon"></li>
+                        <li><img src="assets/social-icons/Twitter.png" alt="twitter icon"></li>
+                        <li><img src="assets/social-icons/LinkedIn.png" alt="linkedin icon"></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="assets/employee-avatar/Scolara%20Visari.png" alt="Scolara Visari photo"
+                         class="employee-photo">
+                    <p class="name">Scolara Visari</p>
+                    <p class="info">Nulla sed nunc et tortor luctus faucibus. Morbi
+                        at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                    <ul class="card-social-icons">
+                        <li><img src="assets/social-icons/Facebook.png" alt="facebook icon"></li>
+                        <li><img src="assets/social-icons/Google.png" alt="google+ icon"></li>
+                        <li><img src="assets/social-icons/Twitter.png" alt="twitter icon"></li>
+                        <li><img src="assets/social-icons/LinkedIn.png" alt="linkedin icon"></li>
                     </ul>
                 </div>
             </div>
+
         </div>
-        <div class="modal">
-            <h3>The letter was sent </h3>
-            <p class="modal-line"></p>
-            <p class="modal-line"></p>
-            <button class="accept" onclick="closeModal()">OK!</button>
+    </section>
+    <section class="get-a-quote" id="contact">
+        <div class="quote-content">
+            <h1 class="get-a-quote-title">Get a Quote</h1>
+            <p class="subtitle">
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+                lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                tortor mauris condimentum nibh.
+            </p>
+            <div class="content">
+                <form action="" name="quote">
+                    <input name="username" type="text" placeholder="Name" required>
+                    <input name="usermail" type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Subject" name="subject"><br>
+                    <textarea name="description" id="" cols="30" rows="12"
+                              placeholder="Describe your project in detail..."></textarea><br>
+                    <input type="submit" onclick="showModal()">
+                </form>
+                <div class="contact-information-container">
+                    <h3 class="contact-title">Contact Information</h3>
+                    <p class="contact-subtitle">
+                        Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<br>ra nibh.
+                        Fusce vitae aliquam tellus. Proin sit amet volutpat libero.
+                        Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                        turpis, et consequat felis.
+                    </p>
+                    <div class="contacts-container">
+                        <ul class="contacts-list">
+                            <li>
+                                <div class="icon-container"><img src="assets/location.png" alt="location"
+                                                                 class="contact-icons" height="11" width="7"></div>
+                                Elm St. 14/05 Lost City
+                            </li>
+                            <li>
+                                <div class="icon-container"><img src="assets/phone.png" alt="phone"
+                                                                 class="contact-icons"
+                                                                 height="11" width="11"></div>
+                                <a class="contact-link" href="tel:03528 331 86 35">03528 331 86 35</a>
+                            </li>
+                            <li>
+                                <div class="icon-container"><img src="assets/mail.png" alt="mail" class="contact-icons"
+                                                                 height="8" width="13"></div>
+                                <a class="contact-link" href="mailto:info@singolo.com">info@singolo.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+                <h3>The letter was sent </h3>
+                <p class="modal-line"></p>
+                <p class="modal-line"></p>
+                <button class="accept" onclick="closeModal()">OK!</button>
+            </div>
         </div>
     </section>
 </main>

@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    background: red;
 }
 
 header {
@@ -62,7 +63,7 @@ nav a:active {
     padding: 50px 0;
 }
 
-.slider-content{
+.slider-content {
     max-width: 1020px;
     width: 100%;
     margin: 0 auto;
@@ -110,7 +111,6 @@ nav a:active {
 }
 
 .our-service-container {
-    height: 494px;
     background-color: #f2f2f2;
     color: #767e9e;
     font-family: "Lato", serif;
@@ -125,7 +125,7 @@ nav a:active {
     align-items: center;
 }
 
-.service-content{
+.service-content {
     max-width: 1020px;
     width: 100%;
     margin: 0 auto;
@@ -137,6 +137,7 @@ nav a:active {
 }
 
 .our-service-title {
+    max-width: 1020px;
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -147,7 +148,6 @@ nav a:active {
 
 .our-service-subtitle {
     max-width: 940px;
-    height: 57px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
@@ -159,13 +159,14 @@ nav a:active {
 
 .service-list {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
     align-items: center;
     vertical-align: center;
     list-style: none;
     flex-wrap: wrap;
-    margin: 50px 0 1px 40px;
+    margin: 20px 40px 64px 40px;
     max-width: 1020px;
+    padding: 0;
 }
 
 .service {
@@ -231,6 +232,12 @@ nav a:active {
     border-bottom: 6px solid #323746;
 }
 
+.portfolio-content {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .about-us-title {
     font-size: 31px;
     line-height: 0.9;
@@ -291,19 +298,18 @@ nav a:active {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 620px;
     overflow: hidden;
 }
 
 
 .cards {
+    display: flex;
     max-width: 950px;
     padding-top: 45px;
-    margin: 0 40px 0 40px;
+    margin: 0 40px 65px 40px;
 }
 
 .card {
-    display: inline;
     float: left;
     overflow: hidden;
 }
@@ -349,13 +355,18 @@ nav a:active {
 }
 
 .about-us {
-    height: 728px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
 }
 
+.about-content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1020px;
+}
+
 .card-margin {
-    margin: 0 21px 0 17px;
+    margin: 0 20px 0 17px;
 }
 
 span :nth-child(1) {
@@ -363,10 +374,15 @@ span :nth-child(1) {
 }
 
 .get-a-quote {
-    max-width: 1020px;
     height: 648px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
+}
+
+.quote-content {
+    max-width: 1020px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .get-a-quote-title {
@@ -391,11 +407,11 @@ span :nth-child(1) {
 
 form {
     margin: 45px 0 0 40px;
-    max-width: 640px;
+    width: 640px;
 }
 
 form input, form textarea {
-    max-width: 595px;
+    width: 595px;
     border-radius: 5px;
     background-color: #d6564f;
     border-style: none;
@@ -424,7 +440,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 }
 
 input[type="submit" i] {
-    max-width: 620px;
+    width: 620px;
     font-size: 12px;
     line-height: 18px;
     color: #f48c8f;
@@ -495,7 +511,6 @@ input[type="submit" i] {
 }
 
 footer {
-    max-width: 1020px;
     height: 76px;
     background-color: #2d303a;
     display: flex;
@@ -530,7 +545,7 @@ footer p {
     background: radial-gradient(circle closest-side, #53596d, #0081b500);
 }
 
-.modal{
+.modal {
     display: none;
     position: fixed;
     width: 300px;
@@ -548,7 +563,7 @@ footer p {
     line-height: 19px;
 }
 
-.modal button{
+.modal button {
     width: 60px;
     background: none;
     border: solid 1px #ffffff;
@@ -557,12 +572,71 @@ footer p {
     padding: 4px;
 }
 
-.modal h3{
+.modal h3 {
     margin: 0;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+    .phone-vertical {
+        height: 363px;
+        width: 180px;
+        margin-right: 54px;
+        margin-left: 46px;
+    }
 
+    .phone-horizontal {
+        height: 180px;
+        width: 363px;
+        margin-right: 41px;
+    }
+
+    .our-service-title {
+        width: 687px;
+        height: 36px;
+        margin: 40px 40px 0 40px;
+    }
+
+    .our-service-subtitle {
+        margin: 18px 40px 28px 40px;
+    }
+
+    .employee-photo {
+        width: 218px;
+        height: 218px;
+    }
+
+    .card-margin {
+        margin: 0 14px;
+    }
+
+    form input, form textarea {
+        width: 442px;
+        margin-bottom: 12px;
+    }
+
+    form {
+        width: 480px;
+    }
+
+    input[type="submit" i] {
+        width: 464px;
+        margin-top: -50px;
+    }
+
+    .contact-information-container {
+        margin: 25px 0 0 20px;
+    }
+
+    .portfolio-images{
+        width: 216px;
+        height: 183px;
+    }
+
+    .image-container{
+        width: 710px;
+    }
 }
+
+/*@media screen and (min-width: 375px) and (max-width: 767px)*/
 
 
